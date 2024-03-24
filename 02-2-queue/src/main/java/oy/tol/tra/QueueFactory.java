@@ -20,8 +20,7 @@ public class QueueFactory {
       // - Instantiates your queue implementation using Integer as template parameter, 
       //   with the given capacity,
       // - and return the object to the caller.
-      
-   }
+      return createIntegerQueue(capacity);
 
    /**
     * Creates an instance of QueueInterface for Integer type.
@@ -36,4 +35,5 @@ public class QueueFactory {
    //    
    // }
 
+}
 }
