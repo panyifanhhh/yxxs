@@ -278,7 +278,7 @@ import org.junit.jupiter.api.Order;
     @DisplayName("Test with strings and reallocation")
     void testStringQueueWithRealloc() {
         // Note the internal array size of four.
-        QueueInterface<String> queue = new QueueImplementation<Java.>();
+        QueueInterface<String> queue = new QueueImplementation<>(4);
         // Strings with capital first letter are in the first added "batch".
         queue.enqueue("First");
         queue.enqueue("Second");
